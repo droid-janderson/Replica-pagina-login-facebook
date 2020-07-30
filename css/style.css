@@ -1,0 +1,443 @@
+@import url(//db.onlinewebfonts.com/c/101df57ddcac22747b33094cf2b6925d?family=Facebook+Letter+Faces);
+
+* {
+	padding: 0;
+	margin: 0;
+
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+	--branco: #fff;
+	--sombra: #0d2b6b;
+	--gelo: #D3D8E8;
+	--cor-botao: #4267b2;
+}
+
+body .container {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: 12.4vh 97vh 155px;
+	grid-template-areas: 
+			'cabecalho cabecalho'
+			'principal principal'
+			'rodape rodape';
+	min-height: 100vh;
+	margin: 0 auto;
+
+	background: linear-gradient(to bottom, var(--branco), var(--gelo));
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	grid-area: cabecalho;
+	background: #3b5998;
+	box-shadow: 0px 1px 1px var(--sombra);
+}
+
+header .centro {
+	width: 73%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	grid-area: cabecalho;
+}
+
+.logo {
+	position: relative;
+	top: 18px;
+}
+
+.logo a {
+	color: var(--branco);
+	font-family:'Facebook Letter Faces', Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+.login {
+	display: flex;
+}
+
+.login label {
+	color: var(--branco);
+}
+
+.login input {
+	width: 150px;
+	height: 23px;
+	padding: 3px;
+	border: 1px solid #ccd0d5;
+	border-color: #1d2a5b;
+}
+
+.email, .senha {
+	display: flex;
+	flex-direction: column;
+	margin-right: 14px;
+	cursor: text;
+}
+
+.email {
+	align-self: center;
+}
+
+.senha {
+	position: relative;
+	top: 10px;
+}
+
+.senha a {
+	color: #9cb4d8;
+}
+
+.texto {
+	margin: 3px 0;
+	font-size: 12px;
+}
+
+#entrar {
+	display: inline-block;
+	width: 49.3333px;
+	height: 24px;
+
+	position: relative;
+	top: 32px;
+
+	background: var(--cor-botao);
+	border: 1px solid #ccd0d5;
+	border-color: #29487d;;
+	border-radius: 2px;
+	cursor: pointer;
+
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	color: var(--branco);
+
+}
+
+.principal {
+	grid-area: principal;
+	display: grid;
+	grid-template-columns: repeat(8, 12.5%);
+	grid-template-rows: repeat(8, 12.5%);
+	position: relative;
+	width: 73%;
+	margin: 0 auto;
+}
+
+.principal .slogan {
+	width: 450px;
+	margin-top: 40px;
+
+	color: #0e385f;
+	font-size: 20px;
+	font-weight: 700;
+
+	line-height: 29px;
+}
+
+.principal figure {
+	grid-column: 1;
+	grid-row: 3;
+
+	position: relative;
+	left: 4px;
+	top: -33px;
+}
+
+.cadastro {
+	grid-column: 5/10;
+	grid-row: 1;
+	position: relative;
+	left: 94px;
+}
+
+.cadastro h2 {
+	color: #333;
+	font-size: 36px;
+	margin-top: 25px;
+	margin-bottom: 5px;
+	line-height: 120%;
+}
+
+.cadastro span {
+	color: #333;
+	font-size: 19px;
+	line-height: 126%;
+}
+
+.nome-sobrenome {
+	margin-top: 20px;
+}
+
+.nome-sobrenome input {
+	display: inline-block;
+	width: 194px;
+	height: 39px;
+	padding: 8px 10px;
+	border-color: #bdc7d8;
+	border: 1px solid #ccd0d5;
+	border-radius: 5px;
+
+	margin: 0 7px 7px 0;
+	font-size: 18px;
+	cursor: text;
+	color: #1c1e21;
+}
+
+.email-senha-cadastro {
+	width: 399px;
+	height: 39px;
+	padding: 8px 10px;
+	padding: 8px 10px;
+	border-color: #bdc7d8;
+	border: 1px solid #ccd0d5;
+	border-radius: 5px;
+
+	margin: 3px 0px 7px 0;
+	font-size: 18px;
+	cursor: text;
+	color: #1c1e21;
+}
+
+.nascimento-nome {
+	margin-top: 12px;
+	margin-bottom: 5px;
+
+	color: #90949c;
+  font-size: 16px;
+	font-weight: bold;
+}
+
+.nascimento .dia {
+	width: 52px;
+	height: 30px;
+	background-color: #fff;
+	color: #1c1e21;
+	border: 1px solid #ccd0d5;
+	padding: 5px;
+	font-size: 13px;
+}
+
+
+.nascimento .mes {
+	width: 57px;
+	height: 30px;
+	background-color: #fff;
+	color: #1c1e21;
+	border: 1px solid #ccd0d5;
+	padding: 5px;
+	font-size: 13px;
+}
+
+.nascimento .ano {
+	width: 61px;
+	height: 30px;
+	background-color: #fff;
+	color: #1c1e21;
+	border: 1px solid #ccd0d5;
+	padding: 5px;
+	font-size: 13px;
+}
+
+.ajuda {
+	display: flex;
+	position: relative;
+	left: 190px;
+	top: -30px;
+	background: #60676f;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+
+	justify-content: center;
+	align-items: center;
+  
+	color: #fff;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: 700;
+
+}
+
+.genero-nome {
+	margin-top: -4px;
+	margin-bottom: 5px;
+
+	color: #90949c;
+  font-size: 16px;
+	font-weight: bold;
+}
+
+.genero span {
+	margin-right: 4px;
+	padding: 5px 0 5px 4px;
+}
+
+.genero {
+	margin: 10px 0 0 7px;
+}
+
+.genero label {
+	position: relative;
+	top: 3px;
+	color: #1d2129;
+	font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 10px 0 0;
+}
+
+
+.ajuda-input {
+	display: flex;
+	position: relative;
+	top: 7px;
+	left: 15px;
+	background: #60676f;
+	width: 16px;
+	height: 16px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+
+	justify-content: center;
+	align-items: center;
+  
+	color: #fff;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.termos {
+	color: #777;
+  font-size: 11px;
+	width: 316px;
+	margin: 1em 0;
+
+	line-height: 14px;
+}
+
+.termos a {
+	color: #385898;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.botao-cadastrar {
+	min-width: 194px;
+	padding: 7px 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 19px;
+	font-weight: 700;
+
+	/* cores */
+	background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+	border-color: #3b6e22 #3b6e22 #2c5115;
+	
+	border: 1px solid;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0,0, 0, .5);
+}
+
+.cadastro hr {
+	width: 399px;
+	margin: 10px 0 0 0;
+	opacity: .2;
+}
+
+.criar-pagina {
+	border-top: 1px solid #dddfe2;
+  color: #666;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.criar-pagina a {
+	color: #385898;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rodape {
+	grid-area: rodape;
+	background-color: var(--branco);
+}
+
+.rodape .largura-rodape {
+	width: 73%;
+	margin: 0 auto;
+}
+
+.rodape .lista-1 {
+	display: flex;
+	font-size: 13px;
+}
+
+.rodape .lista-1 li {
+	margin: 10px 8px 5px 0;
+	list-style-type: none;
+}
+
+.portugues {
+	color: #777;
+}
+
+.rodape ul a {
+	color: #385898;
+  cursor: pointer;
+	text-decoration: none;
+}
+
+#mais-idiomas {
+	background-color: #f5f6f7;
+	border: 1px solid;
+  border-radius: 2px;
+	border-color: #ccd0d5;
+	padding: 0 8px;
+	color: #4b4f56;
+
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.rodape hr {
+	opacity: .4;
+}
+
+.rodape .lista-2 {
+	font-size: 13px;
+	margin-top: 9px;
+}
+
+.rodape .lista-2 li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 10.6px 4px 0;
+}
+
+.copyrigth {
+	position: relative;
+	top: 18px;
+	font-size: 11px;
+	color: #737373;
+}
